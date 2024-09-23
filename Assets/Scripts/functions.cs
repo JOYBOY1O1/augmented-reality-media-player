@@ -16,7 +16,7 @@ public class functions : MonoBehaviour
 
     private void Start()
     {
-        video1 = videocube1.GetComponent<VideoPlayer>();
+        video1 = videocube1.GetComponent<VideoPlayer>(); // Getting Video Component for the Player
         VB_behaviour1 = VirtualButton1.GetComponent<VirtualButtonBehaviour>();
         VB_behaviour1.RegisterOnButtonPressed(playvideo1);
 
