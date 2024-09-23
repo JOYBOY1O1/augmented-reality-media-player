@@ -21,7 +21,7 @@ public class functions : MonoBehaviour
         VB_behaviour1.RegisterOnButtonPressed(playvideo1);
 
     }
-
+    //Function to catch video from object and PLAY/PAUSE it.
     public void playvideo1(VirtualButtonBehaviour vp)
     {
        
