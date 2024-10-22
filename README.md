@@ -7,3 +7,33 @@ This project showcases an Augmented Reality (AR) experience using Unity and Vufo
 - AR Interaction: Utilize Vuforia's virtual button technology to trigger actions in AR space.
 - Video Playback: A video is played on a 3D cube when the virtual button is pressed.
 - Dynamic Button Colors: The button changes its color depending on whether the video is playing (red) or paused (green).
+
+## Project Structure
+### 1. Video Cube:
+- videocube1: A 3D cube in the AR environment that acts as the screen for the video.
+- The VideoPlayer component attached to the cube handles video playback.
+### 2. Virtual Button:
+- VirtualButton1: A virtual button that the user interacts with to play or pause the video.
+- The VirtualButtonBehaviour component triggers the assigned function when pressed.
+### 3. Button Color:
+- buttoncolor: A UI element or object in the AR space that changes color based on the state of the video (red for playing, green for paused).
+
+## Code Explanation
+### Script: functions.cs
+- Initialization (Start() method):
+  <br>
+  - References the VideoPlayer component of the video cube.
+  - Registers the function playvideo1() as a callback when the virtual button is pressed.
+  <br>
+- Video Playback Function (playvideo1()):
+  <br>
+  - Checks if the video is currently playing.
+  - If not playing, starts the video and changes the button color to red.
+  - If playing, pauses the video and changes the button color to green.
+  <br>
+## How It Works
+- When the app detects the AR target, it loads the 3D cube in the AR space with the video content.
+- Users can interact with the Virtual Button using their camera. Pressing the button toggles the video between play and pause.
+- Depending on the video's state, the Button Color will dynamically change:
+  - Red: Video is playing.
+  - Green: Video is paused.
