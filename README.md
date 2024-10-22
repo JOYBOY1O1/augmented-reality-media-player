@@ -1,5 +1,7 @@
 # AR Video Player Project
 
+![ar1](https://github.com/user-attachments/assets/b3f9d7c8-58ed-4bbe-ba02-ea4509709b06)
+
 ## Overview
 This project showcases an Augmented Reality (AR) experience using Unity and Vuforia. The application allows users to trigger video playback by interacting with a virtual button in the AR space. The video appears on a cube object, and the button also changes color based on the video's playback state (playing or paused).
 
@@ -37,3 +39,5 @@ This project showcases an Augmented Reality (AR) experience using Unity and Vufo
 - Depending on the video's state, the Button Color will dynamically change:
   - Red: Video is playing.
   - Green: Video is paused.
+
+![ar2](https://github.com/user-attachments/assets/ec654351-195f-4bc4-8ace-1f06526790b4)
